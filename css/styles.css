@@ -1,0 +1,238 @@
+:root{
+    --secondary-color: #3a3a3a;
+    --primary-color: #e59a59;
+    --about-background-color : rgba(255, 225, 199, 0.3);
+    --section-background-color: #eee;
+}
+
+ /* Color */
+
+.primary-color{
+    color: var(--primary-color)!important;
+}
+.secondary-color{
+    color: var(--secondary-color)!important;
+}
+
+
+header, footer, section{
+    padding: 100px 0;
+    line-height: 30px;
+}
+
+.about, .questions, .our-team{
+    background-color: var(--section-background-color);
+}
+
+
+/* Header */
+
+
+header{
+    padding: 200px 0;
+    background: url("../img/shot-facade.jpg");
+    background-position-y: top;
+    background-size: cover;
+}
+
+header h1{
+    line-height: 4rem;
+}
+
+.btn-primary{
+    display: block;
+    background-color: var(--primary-color);
+    box-shadow: 6px 7px 9px #858585;
+    border: none;
+    transition: box-shadow .15s ease, scale .15s ease;
+    margin: 0 auto;
+    padding: 8px 30px;
+    max-width: 25rem;
+}
+
+.btn-primary:hover{
+    box-shadow: 6px 7px 9px #858585;
+    background-color: var(--primary-color);
+    scale: 1.05;
+}
+
+.btn-primary:active, .btn-primary:focus{
+    background-color: var(--primary-color)!important;
+    box-shadow: none!important;
+    outline: none;
+    scale: 1;
+
+}
+
+/* About */
+
+
+.about i{
+    font-size: 27px;
+    color: var(--primary-color);
+}
+
+.icon-wrapper-circle{
+    margin: 0 auto 15px;
+    width: 85px;
+    height: 85px;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .4s ease-in-out;
+}
+
+.line{
+    width: 100px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin:  15px auto 40px;
+    transition: all .40s ease-in-out;
+}
+
+.about{
+    text-align: center;
+    cursor: pointer;
+}
+
+.about .about-info:hover .line{
+    width: 220px;
+}
+.about .about-info:hover .icon-wrapper-circle{
+    background-color: var(--about-background-color);
+}
+
+.about p{
+    margin-top: 10px;
+    padding: 0 60px;
+}
+
+
+/* Risks */
+
+.about-risks-text{
+    padding-top: 30px;
+}
+.about-risks-text ol{
+    line-height: 30px;
+    height: 220px;
+    overflow-y: auto;
+}
+
+.why-risks-text{
+    background-color: var(--section-background-color);
+    background-image: url("../img/building-draft.png");
+    background-size: cover;
+    background-position-y: 65%;
+    height: 100%;
+    padding: 30px;
+}
+
+/* Questions */
+
+.accordion-button{
+    font-weight: 500;
+}
+.accordion-button:not(.collapsed){
+    background-color: var(--primary-color);
+    color: white;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-button:focus{
+    border-color: var(--primary-color);
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.questions .building h1{
+    position: absolute;
+}
+
+/* Feedbacks */
+.feedback-picture{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feedback-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.feedback-text{
+    padding: 0 20px;
+}
+/* Carousel */
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+.carousel-control-next-icon{
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+}
+.carousel-control-prev{
+    left: -85px;
+}
+.carousel-control-next{
+    right: -85px;
+}
+/* medium and up screens */
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+.carousel-inner .carousel-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-inner .carousel-item.active {
+    opacity: 1;
+}
+
+/* Map */
+#map {
+    height: 310px;
+}
+
+
+@media (max-width: 767px) {
+    .why-risks-text{
+        background-image: none;
+    }
+    .about-risks-text{
+        padding: 20px 25px ;
+    }
+    .carousel-control-prev{
+        left: -20px;
+    }
+    .carousel-control-next{
+        right: -20px;
+    }
+}

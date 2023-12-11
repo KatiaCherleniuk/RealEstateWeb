@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap learn</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <script src="https://kit.fontawesome.com/49a8a81905.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+   <header>
+       <div class="container">
+           <div class="row">
+               <div class="col-12">
+                   <h1 class="text-center">Агенство нерухомості <br> <strong>Рієлт-сервіс</strong> </h1>
+
+                   <a href="#footer" class="btn mt-4 btn-primary btn-lg text-uppercase">Замовити консультацію</a>
+               </div>
+           </div>
+       </div>
+   </header>
+
+   <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center secondary-color mb-5">Про компанію:</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-sm-12 about-info">
+                    <div class="icon-wrapper-circle"><i class="fa-solid fa-award"></i> </div>
+                    <h5 class="text-center">Кваліфікація</h5>
+                    <p>Сертифіковані ріелтори, члени Асоціації фахівців з нерухомості України.</p>
+                    <div class="line"></div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 about-info">
+                    <div class="icon-wrapper-circle"><i class="fa-solid fa-user-shield"></i> </div>
+                    <h5 class="text-center">Безпека</h5>
+                    <p>Готуємо та перевіряємо необхідні документи для угоди. Гарантуємо конфіденційність.</p>
+                    <div class="line"></div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 about-info">
+                    <div class="icon-wrapper-circle"><i class="fa-regular fa-handshake"></i></div>
+                    <h5 class="text-center">Супровід</h5>
+                    <p>Юридичні консультації та підготовка документів, складні угоди (іпотека, опікунська рада, арешти).</p>
+                    <div class="line"></div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 about-info">
+                    <div class="icon-wrapper-circle"><i class="fa-solid fa-chart-line"></i></div>
+                    <h5 class="text-center">Вигода</h5>
+                    <p>Несемо вигоду пропонуючи варіанти у співвідношенні ціна/якість. Заощаджуємо Ваш час працюючи та представляючи Ваші інтереси.</p>
+                    <div class="line"></div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 about-info">
+                    <div class="icon-wrapper-circle"><i class="fa-solid fa-building-circle-check"></i> </div>
+                    <h5 class="text-center">Гарантії</h5>
+                    <p>Несемо відповідальність за прийняті зобов'язання за договором, ви отримуєте звіти і повністю володієте інформацією про процес продажу.</p>
+                    <div class="line"></div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 about-info">
+                    <div class="icon-wrapper-circle"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <h5 class="text-center">Особистий підхід</h5>
+                    <p>Враховуємо всі нюанси, організовуємо процес продажу «під Ключ», робота 24/7 до отримання результату для Вас і Ваших близьких.</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <section class="why-we">
+       <div class="container">
+           <div class="row mb-5">
+               <div class="col-md-6 col-sm-12">
+                   <div class="why-risks-text">
+                       <h5>Чому</h5>
+                       <h6>купівля/продаж нерухомості без ріелтора це ризик для Вашої вигоди?</h6>
+                   </div>
+               </div>
+               <div class="col-md-6 col-sm-12">
+                   <div class="about-risks-text">
+                           <h6>Як правило, власник або здобувач нерухомості не має належного досвіду та навичок, на відміну від експерта з нерухомості (ріелтора) і самостійно не може:</h6>
+                           <ol class="mt-5">
+                               <li>Провести юридичну перевірку документів, уберегти себе від шахраїв або інших ризиків (купівля у забудовника, покупка в іпотеку, покупка з недієздатним чи неповнолітнім тощо)</li>
+                               <li>Реально оцінювати ситуацію (неупереджено, без емоцій), коли це стосується саме Вас, проводити покази так, щоб продати квартиру і в жодному разі не нашкодити (йдеться про передпродажну підготовку, недопущення емоційних коментарів у відповідях на питання покупця тощо).</li>
+                               <li>Правильно побудувати діалог, вести успішні переговори з продавцем або покупцем, досконало орієнтуватися у співвідношенні ціни/якості нерухомості або просто не знайти всі варіанти пропозицій у продажу;</li>
+                               <li>Отримати інформацію до баз даних об'єктів нерухомості, з цінами реально проданих об'єктів, що дозволяє не продешевити при продажі, а при покупці - аргументувати торг і не купити квартиру дорожче за ринок.</li>
+                               <li>Вигідно для себе розібратися в оподаткуванні, особливо коли йдеться про продаж кількох об'єктів нерухомості, адже податкова ставка на кожен продаж календарного року може змінюватися.</li>
+                               <li>Задіяти під час продажу нерухомості всі канали залучення покупця і в тому числі всіх ріелторів та агентства нерухомості з професійної спільноти.</li>
+                           </ol>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <section class="questions">
+       <div class="container">
+           <div class="row align-items-center">
+               <div class="col-12">
+                   <h2 class="text-center secondary-color mb-5">7 простих питань, які варто задати ріелтору</h2>
+               </div>
+               <div class="col-md-6 col-sm-12">
+                   <div class="accordion accordion-flush" id="accordionFlushExample">
+                       <div class="accordion-item">
+                           <h2 class="accordion-header">
+                               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" >
+                                   Чи є вартість квартири ринковою, і чим Ви це аргументуєте?
+                               </button>
+                           </h2>
+                           <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+                               <div class="accordion-body">Ціна квартири визначається шляхом детального аналізу і заснована на порівнянні з приблизно аналогічними об'єктами, які знаходяться в продажу зараз, вже продані або зняті з продажу. Ми не враховуємо приблизно 70% об'єктів в рекламі, яких реально немає. Ви отримуєте реальну вартість квартири у детальному звіті.</div>
+                           </div>
+                       </div>
+                       <div class="accordion-item">
+                           <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                   Як Ви залучаєте на об'єкт усіх покупців на ринку нерухомості?
+                               </button>
+                           </h2>
+                           <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                               <div class="accordion-body">Визначити ринкову вартість квартири або будинку, підготувати об'єкт, підготувати документи, фото і відео зйомка, текст для цільової аудиторії, запуск реклами на всіх Інтернет майданчиках, банер на об'єкті, реклама в соціальних мережах і закритих групах спільноти ріелторів. Стратегія дозволяє знайти покупця і продати квартиру або будинок за найкращою пропозицією.</div>
+                           </div>
+                       </div>
+                       <div class="accordion-item">
+                           <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                   Чи даєте Ви поради щодо покращення об'єкту перед початком продажу?
+                               </button>
+                           </h2>
+                           <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                               <div class="accordion-body">Обов'язково ми даємо рекомендації. Важливо максимально якісно підготувати об’єкт, прибрати особисті речі, щоб покупець міг приміряти об'єкт «на себе». Ми звернемо увагу на явні фактори, що знижують ціну: стан парадного, запах, якість освітлення, дрібні пошкодження, недоліки в ремонті і т.п. Це дозволяє продати квартиру або будинок дорожче.</div>
+                           </div>
+                       </div>
+                       <div class="accordion-item">
+                           <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                   Які конкретно кроки ви робите для продажу моєї нерухомості?
+                               </button>
+                           </h2>
+                           <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                               <div class="accordion-body">Визначаємо вартість, маркетинг і реклама, концентруємо попит, керуємо попитом, ефективно організовуємо і проводимо покази, знаходимо мотивованого покупця, аргументуємо факт того, що він може купити квартиру кращу на ринку за його запитом і продаємо з вигодою для Вас. Здійснюємо контроль на кожному етапі.</div>
+                           </div>
+                       </div>
+                       <div class="accordion-item">
+                           <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                   В якому вигляді Ви надаєте мені звіт про результати своєї роботи?
+                               </button>
+                           </h2>
+                           <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                               <div class="accordion-body">Ви отримуєте звіт в електронному та письмовому вигляді з діючими посиланнями на рекламу, фото всіх зовнішніх видів реклами, інформацією про кількість дзвінків, переглядів, про всі виконані дії та їх результати. Обов'язково в звіті ми даємо подальші рекомендації.</div>
+                           </div>
+                       </div>
+                       <div class="accordion-item">
+                           <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                   Чи є у Вас юридичні підстави надавати пропоновану послугу?
+                               </button>
+                           </h2>
+                           <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                               <div class="accordion-body">Ми працюємо як фізичні особи підприємці з основним видом діяльності «Агентства нерухомості». Це легко перевірити. Наші співробітники мають сертифікати підписані Головою фонду державного майна України і підтверджують кваліфікацію необхідну для проведення операцій з об'єктами нерухомості на території України.</div>
+                           </div>
+                       </div>
+                       <div class="accordion-item">
+                           <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                   Як ви мотивуєте інших ріелторів показати об'єкт покупцям?
+                               </button>
+                           </h2>
+                           <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                               <div class="accordion-body">Ми працюємо за системою партнерських продажів і переконані в тому, що не можна недооцінювати роль колеги, тому пропонуємо йому не брати комісію зі свого покупця, а ділимося своєю. Таким чином, немає жодного чинника, який би завадив покупцеві прийти і зробити свою пропозицію.</div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-6 col-sm-12 position-relative building">
+                   <img class="img-fluid" src="https://thumb.tildacdn.com/tild6439-6530-4932-b731-386562666532/-/format/webp/Z_1_ccexpress_1.png" alt="">
+           </div>
+       </div>
+       </div>
+   </section>
+
+   <section class="feedbacks">
+       <div class="container text-center my-3">
+           <div class="row mb-4">
+               <div class="col-12">
+                   <h2 class="text-center secondary-color mb-5 primary-color">Відгуки клієнтів:</h2>
+               </div>
+           </div>
+           <div class="row mx-auto my-auto justify-content-center">
+               <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                   <div class="carousel-inner" role="listbox">
+                       <div class="carousel-item active">
+                           <div class="col-xl-4 col-md-4">
+                               <div class="feedback-picture mx-auto d-block">
+                                   <img src="img/1.jpg" alt="">
+                               </div>
+                               <div class="feedback-text mt-3">
+                                   <h3 class="text-center">Марія Ковальчук</h3>
+                                   <p>Співпраця з рієлторською компанією була вражаючою. Вони прислухалися до моїх побажань та упевнено керувались ними під час пошуку мого майбутнього дому. Допомогли знайти не просто будинок, але і місце, яке відповідає всім моїм потребам. Рекомендую цю компанію для надійної та зручної покупки чи продажу нерухомості.</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="carousel-item">
+                           <div class="col-xl-4 col-md-4">
+                               <div class="feedback-picture mx-auto d-block">
+                                   <img src="img/2.jpg" alt="">
+                               </div>
+                               <div class="feedback-text mt-3">
+                                   <h3 class="text-center">Дмитро Іваненко</h3>
+                                   <p>Вражений професіоналізмом та добросовісністю рієлторів. Вони вклали всю свою увагу у пошук квартири, що відповідає моїм бюджетним можливостям та вимогам до простору. Всі етапи пошуку та оформлення були максимально чіткі та швидкі. Рекомендую з упевненістю</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="carousel-item">
+                           <div class="col-xl-4 col-md-4">
+                               <div class="feedback-picture mx-auto d-block">
+                                   <img src="img/3.jpg" alt="">
+                               </div>
+                               <div class="feedback-text mt-3">
+                                   <h3 class="text-center">Станіслав Голобородько</h3>
+                                   <p>Шукаючи своє перше житло, звернувся до цієї компанії та не пошкодував. Професіоналізм, який виявили рієлтори, вразив мене. Вони врахували всі мої побажання та знайшли ідеальну квартиру за доступною ціною. Підхід до клієнтів тут на високому рівні.</p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="carousel-item">
+                           <div class="col-xl-4 col-md-4">
+                               <div class="feedback-picture mx-auto d-block">
+                                   <img src="img/4.jpg" alt="">
+                               </div>
+                               <div class="feedback-text mt-3">
+                                   <h3 class="text-center">Анастасія Сидоренко</h3>
+                                   <p>Коли я шукала нерухомість, була надзвичайно вдячна за турботу та увагу, яку надавали мені рієлтори цієї компанії. Вони не тільки допомогли знайти той самий будинок, про який я мріяла, але й підказали корисні поради та деталі, на які я не звертала уваги. Відмінна робота команди!</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                   </a>
+                   <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                   </a>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <section class="our-team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center secondary-color mb-5 primary-color">Про нашу команду:</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 col-sm-12">
+                    <p>Наша компанія з нерухомості пройшла довгий шлях, і на сьогодні ми раді допомагати людям уже 10 років.
+                        Протягом цих років ми створили надійне партнерство з нашими клієнтами, розвиваючи відносини, що базуються на довірі та відкритості.
+                        Ми допомагаємо вам знайти не просто будинок, але і нову домівку — місце, де ви будете творити найкращі спогади.
+                        <br>
+                        <br>
+                        Наша команда фахівців готова вирішити будь-які питання, пов'язані з нерухомістю. Ми надаємо повний спектр послуг, від підбору найзручнішого житла до вирішення всіх юридичних та організаційних аспектів угоди. Ми працюємо для того, щоб забезпечити вам високий рівень сервісу та надійність у кожній деталі процесу.
+                        Наша мета - зробити ваш вибір нерухомості легким та приємним, надаючи повну підтримку на кожному етапі.
+                        <br>
+                        <br>
+                        Завдяки нашому великому досвіду та невтомній роботі, ми прагнемо забезпечити вам найякісніші послуги в сфері нерухомості. Ми ставимо перед собою мету зробити ваш вибір нерухомості надзвичайно приємним та ефективним.
+                        Наша команда готова допомогти вам крок за кроком знайти ідеальне місце для вашого життя, де кожна деталь буде відповідати вашим потребам.
+                    </p>
+                    <h6 class="fst-italic mt-5">
+                        Людмила Черленюк - Директорка компанії
+                    </h6>
+                </div>
+                <div class="col-md-3 col-sm-12 text-center">
+                    <img src="img/our-team.png" alt="Лідер компанії" class="img-fluid">
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <section>
+       <div class="container">
+           <div class="row">
+               <div class="col-12">
+                   <h2 class="text-center secondary-color mb-5">Де ми знаходимось:</h2>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-12">
+                   <div id="map"></div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <footer id="footer">
+       1
+   </footer>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/carousel.js"></script>
+   <script src="js/map.js"></script>
+
+</body>
+</html>
