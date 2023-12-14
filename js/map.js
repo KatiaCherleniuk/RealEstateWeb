@@ -6,7 +6,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 map.scrollWheelZoom.disable();
 
 var markerIcon = L.icon({
-    iconUrl: '../img/marker.png',
+    iconUrl: '/img/marker.png',
 
     iconSize:     [30, 50], // size of the icon
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
